@@ -1,0 +1,86 @@
+header{
+    background: #353535;
+    padding: 2px 2px;
+}
+
+body{
+    background: #353535;
+    padding: 5px 0;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#Logo{
+    width: 15%;
+    margin: 10px 110px;
+    padding: 5px;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0px 0px 0px 650px;
+    display:inline-block;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav li{
+    text-align: right;
+    display:inline-block;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    border: 5px solid #430026;
+    border-radius: 8px;
+    background-color: rgb(240, 52, 140);
+    box-shadow: 7px 7px 7px rgb(32, 28, 28);
+}
+
+nav a{
+    font-family:'Courier New', Courier, monospace;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav li:hover, nav a:hover{
+    color: #430026;
+    font-size: 20px;
+}
+
+nav li:active{
+    border-color:#430026;
+
+}
+
+nav a:active{
+    color:rgb(240, 52, 140);
+}
+
+#SobreNos{
+    font-size: 30px;
+    margin: 94px 150px 110px 150px;
+    padding: 12px;
+    border: 5px solid #430026;
+    border-radius: 8px;
+    background-color: rgb(240, 52, 140);
+    box-shadow: 7px 7px 7px #430026;
+    list-style-type: disc;
+}
+
+footer{
+    text-align: center;
+    background: #430026;
+    padding: 6px 0;
+}
+
+#Univille{
+    position: relative;
+    width: 4%;
+    margin: 1px 1px;
+}
