@@ -5,26 +5,26 @@ body{
 
 #logo{
     width: 24%;
+    margin: 0px 190px;
 }
 
 .caixa{
     position: relative;
     width: 600px;
-    margin: 45px 45px 90px 455px;
+    margin: 45px 45px 90px 410px;
 }
 
 nav li{
     display: block;
     text-align: center;
     width: 55%;
-    margin: 20 2.5%;
-    margin-top: 30px;
+    margin: 26px 20px;
     padding: 30px;
     box-sizing: border-box;
     border: 6px solid #430026;
     border-radius: 20px;
     background-color: rgb(240, 52, 140);
-    box-shadow: 4px 4px 4   px rgb(32, 28, 28);
+    box-shadow: 4px 4px 4   px #430026;
 }
 
 nav a{
