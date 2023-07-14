@@ -1,6 +1,6 @@
-var listaEndomorfo = []
-var listaEctomorfo = []
-var listaMesomorfo = []
+var listaEndomorfo = [0]
+var listaEctomorfo = [0]
+var listaMesomorfo = [0]
 
 var indice = 0;
 
@@ -18,8 +18,8 @@ function prontoProxima(){
     text: "Pronto para a próxima pergunta?",
     icon: 'question',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
+    confirmButtonColor: '#f0348c',
+    cancelButtonColor: '#430026',
     confirmButtonText: 'Sim',
     cancelButtonText: 'Não'
   }).then((result) => {
@@ -29,7 +29,7 @@ function prontoProxima(){
       document.getElementById("indice").innerHTML = indice
       comecar()
     } else {
-      Swal.fire('Tudo bem! Podemos continuar em outro momento')
+      Swal.fire('Tudo bem! Podemos continuar em outro momento');
       location.reload();
     }
   })
@@ -47,8 +47,8 @@ function comecar(){
             text: perguntasTela[indice],
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#f0348c',
+            cancelButtonColor: '#430026',
             confirmButtonText: 'Sim',
             cancelButtonText: 'Não'
           }).then((result) => {
@@ -79,8 +79,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
       }).then((result) => {
@@ -111,8 +111,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
       }).then((result) => {
@@ -142,8 +142,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
       }).then((result) => {
@@ -174,8 +174,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
       }).then((result) => {
@@ -207,8 +207,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
     }).then((result) => {
@@ -240,8 +240,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
     }).then((result) => {
@@ -251,6 +251,7 @@ break
 	        document.getElementById("listaEndomorfo").innerHTML = listaEndomorfo;
           document.getElementById("listaEctomorfo").innerHTML = listaEctomorfo;
           document.getElementById("listaMesomorfo").innerHTML = listaMesomorfo;
+          prontoProxima()  
     } else {
     // O usuário  respondeu "Não"
 	    listaEctomorfo.push ("Não possui facilidade em ganho de massa muscular");
@@ -271,8 +272,8 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
     }).then((result) => {
@@ -282,6 +283,7 @@ break
 	        document.getElementById("listaEndomorfo").innerHTML = listaEndomorfo;
           document.getElementById("listaEctomorfo").innerHTML = listaEctomorfo;
           document.getElementById("listaMesomorfo").innerHTML = listaMesomorfo;
+          prontoProxima()
     } else {
     // O usuário  respondeu "Não"
 	    listaEctomorfo.push ("Não possui resposta rápida ao treinamento");
@@ -301,8 +303,8 @@ break
             text: perguntasTela[indice],
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#f0348c',
+            cancelButtonColor: '#430026',
             confirmButtonText: 'Sim',
             cancelButtonText: 'Não'
         }).then((result) => {
@@ -332,18 +334,18 @@ break
         text: perguntasTela[indice],
         icon: 'question',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#f0348c',
+        cancelButtonColor: '#430026',
         confirmButtonText: 'Sim',
         cancelButtonText: 'Não'
     }).then((result) => {
-        if (result.isConfirmed) {
+      if (result.isConfirmed) {
     	// O usuário respondeu "Sim"
-          listaMesomorfo.push ("Possui proporções equilibradas");
-          document.getElementById("listaEndomorfo").innerHTML = listaEndomorfo;
-          document.getElementById("listaEctomorfo").innerHTML = listaEctomorfo;
-          document.getElementById("listaMesomorfo").innerHTML = listaMesomorfo;
-          verResultados()
+        listaMesomorfo.push ("Possui proporções equilibradas");
+        document.getElementById("listaEndomorfo").innerHTML = listaEndomorfo;
+        document.getElementById("listaEctomorfo").innerHTML = listaEctomorfo;
+        document.getElementById("listaMesomorfo").innerHTML = listaMesomorfo;
+        verResultados()
       } else {
       // O usuário  respondeu "Não"
         listaEctomorfo.push ("Não possui proporções equilibradas");
@@ -354,7 +356,6 @@ break
         verResultados() 
       }
     })
-break
     }
 }
 
@@ -364,19 +365,19 @@ function verResultados(){
     text: "Deseja Consultá-los?",
     icon: 'question',
     showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
+    confirmButtonColor: '#f0348c',
+    cancelButtonColor: '#430026',
     confirmButtonText: 'Sim',
     cancelButtonText: 'Não'
   }).then((result) => {
     if (result.isConfirmed) {
     // O usuário respondeu "Sim"
-      calcularesultado()
+      calcularesultado();
     } else {
       Swal.fire('Tudo bem! Podemos continuar em outro momento')
       location.reload();
     }
-  })
+  });
 }
 
 
@@ -385,27 +386,29 @@ function calcularesultado(){
   var qtdlistaEctomorfo = listaEctomorfo.length;
   var qtdlistaMesomorfo = listaMesomorfo.length;
 
-  var maior = Endomorfo;
+  var maior = "Endomorfo";
 
   if(qtdlistaEctomorfo>qtdlistaEndomorfo){
-    maior = Ectomorfo;
+    maior = "Ectomorfo";
   }
 
   if(qtdlistaMesomorfo>maior){
-    maior = Mesoformo;
+    maior = "Mesoformo";
   }
   document.getElementById("maior").innerHTML = maior;
-  resultado();
+  resultado(maior);
 }
 
-function resultado(){
+function resultado(maior){
   switch(maior){
-    case Endomorfo:
-      Swal.fire('Seu paciente é Endomorfo');
-    case Ectomorfo:
-      Swal.fire('Seu paciente é Ectomorfo')
-    case Mesoformo:
-      Swal.fire('Seu paciente é Mesoformo')
+    case "Endomorfo":
+      window.location.href = "Endomorfo.html"
+    break
+    case "Ectomorfo":
+      window.location.href = "Ectomorfo.html"
+    break
+    case "Mesoformo":
+      window.location.href = "Mesomorfo.html"
+    break
     }
-
 }

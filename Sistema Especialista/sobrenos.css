@@ -11,22 +11,22 @@ body{
 }
 
 #Logo{
-    width: 12%;
-    margin: 10px 550px;
+    width: 10%;
+    margin: 10px 560px;
     padding: 5px;
 }
 
 .caixa{
     position: relative;
     width: 940px;
-    margin: 0px 100px;
+    margin: 0px;
     display:inline-block;
 }
 
 nav{
     position: absolute;
     top: 20px;
-    right: -350px;
+    right: -320px;
 }
 
 nav li{
@@ -63,8 +63,8 @@ nav a:active{
 }
 
 #SobreNos{
-    font-size: 24px;
-    margin: 50px 150px 90px 150px;
+    font-size: 20px;
+    margin: 40px 130px 40px 130px;
     padding: 12px;
     border: 5px solid #430026;
     border-radius: 8px;
@@ -74,7 +74,6 @@ nav a:active{
 }
 
 footer{
-    text-align: center;
     background: #430026;
     padding: 6px 0;
 }
@@ -82,5 +81,5 @@ footer{
 #Univille{
     position: relative;
     width: 4%;
-    margin: 1px 1px;
+    margin: 0px 600px;
 }

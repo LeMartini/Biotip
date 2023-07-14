@@ -1,32 +1,33 @@
 header{
-    background: #353535;
+    background: #430026;
     padding: 2px 2px;
-    height: 110px;
+    height: 100px;
 }
+
 body{
-    background: #353535;
-    padding: 5px 0;
+    background: #430026;
+    padding: 2px 0;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
 #Logo{
-    width: 10%;
-    margin: 5px 555px;
+    width: 85px;
+    margin: 5px 640px;
     padding: 1px;
 }
 
 .caixa{
     position: relative;
-    width: 940px;
-    margin: 0px 30px;
+    width: 1100px;
+    margin: 0px 2px;
     display:inline-block;
 }
 
 nav{
     position: absolute;
     top: 20px;
-    right: -290px;
+    right: -300px;
 }
 
 nav li{
@@ -61,25 +62,43 @@ nav a:active{
     color:rgb(240, 52, 140);
 }
 
-#ComoJogar, #Regras{
-    font-size: 20px;
-    margin: 26px 60px;
-    padding: 10px;
-    border: 5px solid #430026;
-    border-radius: 8px;
-    background-color: rgb(240, 52, 140);
-    box-shadow: 7px 7px 7px rgb(32, 28, 28);
-    list-style-type: disc;
+h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 1px 1px 600px;
+}
+
+p{
+    color: white;
+    font-size: 22px;
+    margin: 4px 20px;
+}
+
+#biotipo{
+    background-color:rgb(236, 123, 176);
+    margin: 15px 1px 1px 1px;
+    display: inline-block;
+}
+
+#atributos{
+    width: 1035px;
+    margin: 2px 5px 2px 35px;
+}
+
+#boneco{
+    width: 290px;
+    margin: 2px 2px 2px 4px;
 }
 
 footer{
     background: #430026;
-    padding: 2px 0;
-    margin: 0px 2px;
+    padding: 1px 0;
+    margin: 2px 2px;
 }
 
 #Univille{
     position: relative;
     width: 4%;
-    margin: 0px 610px;
+    margin: 1px 650px;
 }
